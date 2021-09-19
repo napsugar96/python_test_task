@@ -141,7 +141,7 @@ class DistanceCalculator:
             smaller = smaller[-1]
         return self.mkad_np[round(bigger[0] - 1)], self.mkad_np[round(smaller[0] - 1)]
 
-    def outside_bounding_box(self, long, lat):
+    def outside_bounding_box(self, long: float, lat: float) -> bool:
         """ Returns True if a coordinate (longitude, latitude) is outside of the minimum bounding rectangle of MKAD."""
         if long < self.minlong or long > self.maxlong or lat < self.minlat or lat > self.maxlat:
             return True

@@ -26,10 +26,6 @@ def get_location(response: str) -> (str, str): # longitude, latitude
         return None, None
 
     if 'data' in json_obj and len(json_obj['data']) != 0:
-        print(json_obj)
-        print('valid address')
-        print(json_obj['data'][0]['latitude'])
-        print(json_obj['data'][0]['longitude'])
         return json_obj['data'][0]['longitude'], json_obj['data'][0]['latitude']
     else:
         print('problem with geocoder api response')

@@ -22,7 +22,7 @@ pip install Flask
 pip install haversine
 pip install numpy
 ```
-After installation of the above packages the app can be started:
+After installing the above packages the app can be started:
 
 ```
 python src/main.py
@@ -35,7 +35,7 @@ Content-Type: application/json
 Content-Length: 23
 {"address": "Budapest"}
 ```
-If the request was successful, the app will reply with an empty 204.
+If the request was successful, the app will return 204 code and empty body.
 If the body is missing or has invalid content, the app will send 400 error 
 response.
 
