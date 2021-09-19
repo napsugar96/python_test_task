@@ -1,6 +1,6 @@
 import unittest
 
-from src.main import *
+from main import *
 
 
 class DistanceCalculatorTest(unittest.TestCase):
